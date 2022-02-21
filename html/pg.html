@@ -7,29 +7,22 @@
     <title>PlayGround</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
-    
     <style>
         .options{
             border: 2px solid black;
             border-radius: 5px;
         }
+        body{
+            background-color: rgb(0, 0, 0);
+        }
     </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
 </head>
+
+
+
+
 <body>
+    <!-- NAVBAR -->
     <div class="m-4">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -47,10 +40,24 @@
             </div>
         </nav>
     </div>
-    
 
 
-<div class="container" style="background-color: ghostwhite; color: black;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container" style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
     <center>
         <h1 style="margin-top: 3.25em;">
             Make Your Team
@@ -58,9 +65,11 @@
     </center>
 </div>
 
-
+<!-- FORM FOR TEAM SELECTION -->
 <form method="post" autocomplete="off" name="google-sheet" >
-    <div class="container-fluid" style="background-color: aqua; padding-top: 1em;padding-bottom: 1em;">
+
+
+    <div class="container-fluid" style="background-color: rgb(0, 0, 0); padding-top: 1em;padding-bottom: 1em;">
         <div class="form-group mt-3">
             <input type="text" name="Name" class="form-control" placeholder="Name" value="" required=""/>
         </div>
@@ -71,7 +80,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
 <!-- team selection start -->
+
+<!-- --------------------------------------------------BATSMEN----------------------------------------------------- -->
+
     <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
@@ -132,73 +153,81 @@
 
 
 
+<!-- ---------------------------------------------------------PBKS BATSMEN--------------------------------------------------------- -->
+                    <!-- 1 -->
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="B4" id="B4" value="Mayank Agarwal" style="height: 50px; width: 50px;" class="bat">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Mayank Agarwal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="B5" id="B5" value="Prerak Mankad" style="height: 50px; width: 50px;" class="bat">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Prerak Mankad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="B6" id="B6" value="Bhanuka Rajapaksa" style="height: 50px; width: 50px;" class="bat">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Bhanuka Rajapaksa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="B7" id="B7" value="Shahrukh Khan" style="height: 50px; width: 50px;" class="bat">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Shahrukh Khan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="B8" id="B8" value="Shikhar Dhawan" style="height: 50px; width: 50px;" class="bat">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Shikhar Dhawan</p>
+                            </div>
+                        </div>
+                    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
 
                     <!-- <div class="container options" >
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
-                                <input type="checkbox" name="B4" id="B4" value="KL RAHUL" style="height: 50px; width: 50px;" class="bat">
+                                <input type="checkbox" name="B9" id="B9" value="" style="height: 50px; width: 50px;" class="bat">
                             </div>
                             <div class="col">
-                                <p style="font-size: 25px;">SHIKHAR DHAWAN</p>
+                                <p style="font-size: 25px;"></p>
                             </div>
                         </div>
                     </div>
-    
-                    <div class="container options" >
-                        <div class="row row-cols-2 mt-2">
-                            <div class="col-3">
-                                <input type="checkbox" name="B5" id="B5" value="KL RAHUL" style="height: 50px; width: 50px;" class="bat">
-                            </div>
-                            <div class="col">
-                                <p style="font-size: 25px;">VIRAT KOHLI</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="container options" >
-                        <div class="row row-cols-2 mt-2">
-                            <div class="col-3">
-                                <input type="checkbox" name="B6" id="B6" value="SURYA K.Y" style="height: 50px; width: 50px;" class="bat">
-                            </div>
-                            <div class="col">
-                                <p style="font-size: 25px;">SURYA KUMAR .Y</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="container options" >
-                        <div class="row row-cols-2 mt-2">
-                            <div class="col-3">
-                                <input type="checkbox" name="B7" id="B7" value="SHREYAS IYER" style="height: 50px; width: 50px;" class="bat">
-                            </div>
-                            <div class="col">
-                                <p style="font-size: 25px;">SHREYAS IYER</p>
-                            </div>
-                        </div>
-                    </div> -->
-    
-                    <!-- <div class="container options" >
-                        <div class="row row-cols-2 mt-2">
-                            <div class="col-3">
-                                <input type="checkbox" name="B8" id="B8" value="KL RAHUL" style="height: 50px; width: 50px;" class="bat">
-                            </div>
-                            <div class="col">
-                                <p style="font-size: 25px;">KL RAHUL</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="container options" >
-                        <div class="row row-cols-2 mt-2">
-                            <div class="col-3">
-                                <input type="checkbox" name="B9" id="B9" value="KL RAHUL" style="height: 50px; width: 50px;" class="bat">
-                            </div>
-                            <div class="col">
-                                <p style="font-size: 25px;">KL RAHUL</p>
-                            </div>
-                        </div>
-                    </div>
-    
+
                     <div class="container options" >
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
@@ -209,7 +238,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="container options" >
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
@@ -220,7 +249,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="container options" >
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
@@ -234,6 +263,7 @@
                 </div>
             </div>
         </div>
+<!-- bat-end -->
 
 
 
@@ -244,8 +274,7 @@
 
 
 
-
-
+<!-- -----------------------------------------------------BOWLERS----------------------------------------------------------- -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -254,8 +283,6 @@
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
-
-
 
 
 
@@ -350,60 +377,140 @@
                         </div>
                     </div>
 <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
-                    <!-- <div class="container options" >
+
+
+
+
+
+<!-- ---------------------------------------------------------PBKS BOWLERS--------------------------------------------------------- -->
+
+                    <div class="container options" style="background-color: red; color: gold;">
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
-                                <input type="checkbox" name="BL" id="BL" value="" style="height: 50px; width: 50px;" class="Bowl">
+                                <input type="checkbox" name="BL9" id="BL9" value="Arshdeep Singh" style="height: 50px; width: 50px;" class="Bowl">
                             </div>
                             <div class="col">
-                                <p style="font-size: 25px;"></p>
+                                <p style="font-size: 25px;">Arshdeep Singh</p>
                             </div>
                         </div>
                     </div>
-                    <div class="container options" >
+                    <div class="container options" style="background-color: red; color: gold;">
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
-                                <input type="checkbox" name="BL" id="BL" value="" style="height: 50px; width: 50px;" class="Bowl">
+                                <input type="checkbox" name="BL10" id="BL10" value="Writtick Chatterjee" style="height: 50px; width: 50px;" class="Bowl">
                             </div>
                             <div class="col">
-                                <p style="font-size: 25px;"></p>
+                                <p style="font-size: 25px;">Writtick Chatterjee</p>
                             </div>
                         </div>
                     </div>
-                    <div class="container options" >
+                    <div class="container options" style="background-color: red; color: gold;">
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
-                                <input type="checkbox" name="BL" id="BL" value="" style="height: 50px; width: 50px;" class="Bowl">
+                                <input type="checkbox" name="BL11" id="BL11" value="Odean Smith" style="height: 50px; width: 50px;" class="Bowl">
                             </div>
                             <div class="col">
-                                <p style="font-size: 25px;"></p>
+                                <p style="font-size: 25px;">Odean Smith</p>
                             </div>
                         </div>
                     </div>
-                    <div class="container options" >
+                    <div class="container options" style="background-color: red; color: gold;">
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
-                                <input type="checkbox" name="BL" id="BL" value="" style="height: 50px; width: 50px;" class="Bowl">
+                                <input type="checkbox" name="BL12" id="BL12" value="Sandeep Sharma" style="height: 50px; width: 50px;" class="Bowl">
                             </div>
                             <div class="col">
-                                <p style="font-size: 25px;"></p>
+                                <p style="font-size: 25px;">Sandeep Sharma</p>
                             </div>
                         </div>
                     </div>
-                    <div class="container options" >
+                    <div class="container options" style="background-color: red; color: gold;">
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
-                                <input type="checkbox" name="BL" id="BL" value="" style="height: 50px; width: 50px;" class="Bowl">
+                                <input type="checkbox" name="BL13" id="BL13" value="Raj Bawa" style="height: 50px; width: 50px;" class="Bowl">
                             </div>
                             <div class="col">
-                                <p style="font-size: 25px;"></p>
+                                <p style="font-size: 25px;">Raj Bawa</p>
                             </div>
                         </div>
-                    </div> -->
-                </div> 
+                    </div>
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="BL14" id="BL14" value="Nathan Ellis" style="height: 50px; width: 50px;" class="Bowl">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Nathan Ellis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="BL15" id="BL15" value="Vaibhav Arora" style="height: 50px; width: 50px;" class="Bowl">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Vaibhav Arora</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="BL16" id="BL16" value="Ishan Porel" style="height: 50px; width: 50px;" class="Bowl">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Ishan Porel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="BL17" id="BL17" value="Harpreet Brar" style="height: 50px; width: 50px;" class="Bowl">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Harpreet Brar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="BL18" id="BL18" value="Rahul Chahar" style="height: 50px; width: 50px;" class="Bowl">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Rahul Chahar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="BL19" id="BL19" value="Kagiso Rabada" style="height: 50px; width: 50px;" class="Bowl">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Kagiso Rabada</p>
+                            </div>
+                        </div>
+                    </div>
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+
+                </div>
             </div>
         </div>
+<!-- bowl-end -->
 
+
+
+
+
+
+
+
+
+
+<!-- ----------------------------------------------------Wicket Keepers-------------------------------------------------------------- -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -441,7 +548,7 @@
                     <div class="container options" style="background-color: aqua;">
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
-                                <input type="checkbox" name="WK" id="WK" value="Quinton De Kock" style="height: 50px; width: 50px;" class="wk">
+                                <input type="checkbox" name="WK2" id="WK2" value="Quinton De Kock" style="height: 50px; width: 50px;" class="wk">
                             </div>
                             <div class="col">
                                 <p style="font-size: 25px;">Quinton De Kock</p>
@@ -449,40 +556,52 @@
                         </div>
                     </div>
 <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+<!-- --------------------------------------------------------PBKS WK---------------------------------------------------------------------------- -->
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="WK3" id="WK3" value="Prabhsimran Singh" style="height: 50px; width: 50px;" class="wk">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Prabhsimran Singh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="WK4" id="WK4" value="Jitesh Sharma" style="height: 50px; width: 50px;" class="wk">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Jitesh Sharma</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="WK5" id="WK5" value="Jonny Bairstow" style="height: 50px; width: 50px;" class="wk">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Jonny Bairstow</p>
+                            </div>
+                        </div>
+                    </div>
+<!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
                     <!-- <div class="container options" >
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
-                                <input type="checkbox" name="WK" id="WK" value="" style="height: 50px; width: 50px;" class="wk">
-                            </div>
-                            <div class="col">
-                                <p style="font-size: 25px;">Samson</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container options" >
-                        <div class="row row-cols-2 mt-2">
-                            <div class="col-3">
-                                <input type="checkbox" name="WK" id="WK" value="" style="height: 50px; width: 50px;" class="wk">
-                            </div>
-                            <div class="col">
-                                <p style="font-size: 25px;">A</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container options" >
-                        <div class="row row-cols-2 mt-2">
-                            <div class="col-3">
-                                <input type="checkbox" name="WK" id="WK" value="" style="height: 50px; width: 50px;" class="wk">
-                            </div>
-                            <div class="col">
-                                <p style="font-size: 25px;">B</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container options" >
-                        <div class="row row-cols-2 mt-2">
-                            <div class="col-3">
-                                <input type="checkbox" name="WK" id="WK" value="" style="height: 50px; width: 50px;" class="wk">
+                                <input type="checkbox" name="WK6" id="WK6" value="" style="height: 50px; width: 50px;" class="wk">
                             </div>
                             <div class="col">
                                 <p style="font-size: 25px;">C</p>
@@ -492,7 +611,17 @@
                 </div>
             </div>
         </div>
+        <!-- bat-end -->
 
+
+
+
+
+
+
+
+
+<!-- ----------------------------------------------------------ALL Rounders-------------------------------------------------------------- -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -515,7 +644,7 @@
 
             <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
-                    <div class="container options" >
+                    <div class="container options" style="background-color: aqua;">
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
                                 <input type="checkbox" name="AL1" id="AL1" value="Deepak Hooda" style="height: 50px; width: 50px;" class="all">
@@ -525,7 +654,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container options" >
+                    <div class="container options" style="background-color: aqua;">
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
                                 <input type="checkbox" name="AL2" id="AL2" value="Jason Holder" style="height: 50px; width: 50px;" class="all">
@@ -535,7 +664,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container options" >
+                    <div class="container options" style="background-color: aqua;">
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
                                 <input type="checkbox" name="AL3" id="AL3" value="Krunal Pandya" style="height: 50px; width: 50px;" class="all">
@@ -545,7 +674,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container options" >
+                    <div class="container options" style="background-color: aqua;">
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
                                 <input type="checkbox" name="AL4" id="AL4" value="Ayush Badoni" style="height: 50px; width: 50px;" class="all">
@@ -555,7 +684,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container options" >
+                    <div class="container options" style="background-color: aqua;">
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
                                 <input type="checkbox" name="AL5" id="AL5" value="K Gowtham" style="height: 50px; width: 50px;" class="all">
@@ -565,7 +694,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container options" >
+                    <div class="container options" style="background-color: aqua;">
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
                                 <input type="checkbox" name="AL6" id="AL6" value="Karan Sharma" style="height: 50px; width: 50px;" class="all">
@@ -575,7 +704,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container options" >
+                    <div class="container options" style="background-color: aqua;">
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
                                 <input type="checkbox" name="AL7" id="AL7" value="Kyle Mayers" style="height: 50px; width: 50px;" class="all">
@@ -585,9 +714,79 @@
                             </div>
                         </div>
                     </div>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+
+
+
+<!-- ---------------------------------------------------------PBKS ALLY--------------------------------------------------------------------- -->
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="AL8" id="AL8" value="Benny Howell" style="height: 50px; width: 50px;" class="all">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Benny Howell</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="AL9" id="AL9" value="Baltej Singh" style="height: 50px; width: 50px;" class="all">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Baltej Singh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="AL10" id="AL10" value="Ansh Patel" style="height: 50px; width: 50px;" class="all">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Ansh Patel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="AL11" id="AL11" value="Liam Livingstone" style="height: 50px; width: 50px;" class="all">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Liam Livingstone</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="AL12" id="AL12" value="Rishi Dhawan" style="height: 50px; width: 50px;" class="all">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Rishi Dhawan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container options" style="background-color: red; color: gold;">
+                        <div class="row row-cols-2 mt-2">
+                            <div class="col-3">
+                                <input type="checkbox" name="AL12" id="AL12" value="Atharva Taide" style="height: 50px; width: 50px;" class="all">
+                            </div>
+                            <div class="col">
+                                <p style="font-size: 25px;">Atharva Taide</p>
+                            </div>
+                        </div>
+                    </div>
+<!-- ------------------------------------------------------------------------------------------------------------------------------- -->
                 </div>
             </div>
         </div>
+        <!-- all rounders end -->
+<!-- team selection end -->
     </div>
 <hr><hr>
 
@@ -671,20 +870,20 @@
                     <div class="container options" >
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
-                                <input type="checkbox" name="AL1" value="DEEPAK HOODA" style="height: 50px; width: 50px;">
+                                <input type="checkbox" name="" value="" id="c1" style="height: 50px; width: 50px;">
                             </div>
                             <div class="col">
-                                <p style="font-size: 25px;">DEEPAK HOODA</p>
+                                <p style="font-size: 25px;"></p>
                             </div>
                         </div>
                     </div>
                     <div class="container options" >
                         <div class="row row-cols-2 mt-2">
                             <div class="col-3">
-                                <input type="checkbox" name="AL2" id="AL3" value="WASHINGTON SUNDAR" style="height: 50px; width: 50px;" class="all">
+                                <input type="checkbox" name="" id="" value="" style="height: 50px; width: 50px;" class="all">
                             </div>
                             <div class="col">
-                                <p style="font-size: 25px;">WASHINGTON SUNDAR</p>
+                                <p style="font-size: 25px;"></p>
                             </div>
                         </div>
                     </div>
@@ -725,7 +924,7 @@
             </div>
         </div>
 
-        
+
         <div class="form-group">
             <input type="submit" name="submit" class="btnSubmit btn-block" value="Go Ahead"/>
         </div>
@@ -734,7 +933,7 @@
     </div>
 </div>
 
-    
+
 
 
 
@@ -787,7 +986,7 @@
                     element.classList.remove("badge", "bg-danger","bg-success");
                     element.classList.add("badge", "bg-danger");
                 }
-                
+
                 else if (countBT>6){
                     var element = document.getElementById("selected_bat");
                     element.classList.remove("badge", "bg-danger","bg-success");
@@ -798,7 +997,7 @@
                     element.classList.remove("badge", "bg-danger","bg-success");
                     element.classList.add("badge", "bg-success");
                 }
-                
+
             } else{
                 countBT--;
                 if (countBT<3){
@@ -806,7 +1005,7 @@
                     element.classList.remove("badge", "bg-danger","bg-success");
                     element.classList.add("badge", "bg-danger");
                 }
-                
+
                 else if (countBT>6){
                     var element = document.getElementById("selected_bat");
                     element.classList.remove("badge", "bg-danger","bg-success");
@@ -820,7 +1019,7 @@
             }
             document.getElementById('selected_bat').innerHTML = countBT;
         })
-    } 
+    }
 
 
 
@@ -845,7 +1044,7 @@
                     element.classList.remove("badge", "bg-danger","bg-success");
                     element.classList.add("badge", "bg-danger");
                 }
-                
+
                 else if (countBL>4){
                     var element = document.getElementById("selected_bowl");
                     element.classList.remove("badge", "bg-danger","bg-success");
@@ -864,7 +1063,7 @@
                     element.classList.remove("badge", "bg-danger","bg-success");
                     element.classList.add("badge", "bg-danger");
                 }
-                
+
                 else if (countBL>6){
                     var element = document.getElementById("selected_bowl");
                     element.classList.remove("badge", "bg-danger","bg-success");
