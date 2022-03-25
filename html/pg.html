@@ -18,7 +18,7 @@
     <div class="m-4">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a href="#" class="navbar-brand"><h1 style="font-size: 40px;">Cricket Spirit</h1></a>
+                <a href="../index.html" class="navbar-brand"><h1 style="font-size: 40px;">Cricket Spirit</h1></a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -26,7 +26,7 @@
                     <div class="navbar-nav">
                         <a href="../index.html" class="nav-item nav-link "><div style="font-size: 30px;">Home</div> </a>
                         <a href="../html/rule.html" class="nav-item nav-link"><div style="font-size: 30px;">Rules</div></a>
-                        <a href="../html/pg.html" class="nav-item nav-link"><div style="font-size: 30px;">PlayGround</div></a>
+                        <a href="#" class="nav-item nav-link"><div style="font-size: 30px;">PlayGround</div></a>
                         <!-- <a href="../html/result.html" class="nav-item nav-link active"><div style="font-size: 25px; ">Results</div></a> -->
                     </div>
                 </div>
@@ -35,7 +35,7 @@
 
 
 
-        <div class="card" style="margin-top: 8em;">
+        <!-- <div class="card" style="margin-top: 8em;">
             <center>
                 <h1 style="border: 1px solid;padding: 0.5em;background: linear-gradient(to right,rgb(71, 15, 134),yellow,rgb(71, 15, 134));color: blue;text-shadow: 1px 1px gold;border-radius: 7px;">
                     CSK Vs KKR
@@ -54,7 +54,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="card" style="margin-top: 8em;">
             <center>
@@ -68,11 +68,12 @@
                 </h5>
                 <p class="card-text">
                     7:30 PM
+                    <p id="demo" style="font-size: 30px; background: linear-gradient(to right,black,blue,black); text-align: center; color: aliceblue; border-radius: 10px;"></p>
                 </p>
                 <div class="d-grid gap-2 ">
-                    <!-- <a href="matches/mh2.html" class="btn btn-secondary" aria-disabled="true">
+                    <a href="matches/mh2.html" class="btn btn-primary" aria-disabled="true">
                         Make Team For This Match
-                    </a> -->
+                    </a>
                 </div>
             </div>
         </div>
@@ -80,5 +81,35 @@
 
 
 
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("March 27, 2022 15:30:00").getTime();
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+            
+              // Get today's date and time
+              var now = new Date().getTime();
+            
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+            
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+              // Display the result in the element with id="demo"
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+            
+              // If the count down is finished, write some text
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
 </body>
 </html>

@@ -1,1115 +1,516 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlayGround</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <style>
-        .options{
-            border: 2px solid black;
-            border-radius: 5px;
-        }
-        body{
-            background-color: rgb(0, 0, 0);
-        }
-    </style>
-</head>
-
-
-
-
-<body>
-    <!-- NAVBAR -->
-    <div class="m-4">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a href="#" class="navbar-brand"><h1 style="font-size: 40px;">Cricket Spirit</h1></a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <a href="../index.html" class="nav-item nav-link"><div style="font-size: 30px;">Home</div></a>
-                        <a href="../html/rule.html" class="nav-item nav-link "><div style="font-size: 30px;">Rules</div></a>
-                        <a href="../html/pg.html" class="nav-item nav-link active"><div style="font-size: 25px;">PlayGround</div></a>
-                        <a href="../html/result.html" class="nav-item nav-link"><div style="font-size: 30px;">Results</div></a>
-                    </div>
-            </div>
-        </nav>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div>
-    <center>
-        <h1 style="color: aliceblue;margin-top: 2.5em; font-size: 40px;">
-            CSK Vs KKR 
-        </h1>
-    </center>
-</div>
-
-<!-- FORM FOR TEAM SELECTION -->
-<form method="post" autocomplete="off" name="google-sheet" >
-
-
-    <div class="container-fluid" style="background-color: rgb(0, 0, 0); padding-top: 1em;padding-bottom: 1em;">
-        <div class="form-group mt-3" style="background-color: transparent;">
-            <input type="text" name="Name" class="form-control" placeholder="Name" value="" required=""/>
-        </div>
-        <div class="form-group mt-3">
-            <input type="password" name="Unicode" class="form-control" placeholder="Unicode" value="" required=""/>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- team selection start -->
-<div class="accordion accordion-flush" id="accordionFlushExample"  style="margin: 15px;">
-<!-- --------------------------------------------------BATSMEN----------------------------------------------------- -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Batsmen <span class="badge bg-danger" style="margin-left: 2px;" id="selected_bat" >0</span>
-                </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-
-
-<!-- -----------------------------------------team 1--------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------CSK BAtsmen----------------------------------------------------------------- -->
-<div>
-    <div class="container options" style="background: linear-gradient(yellow,gold, blue);color: blue;text-shadow: 1px 1px gold">
-        <div class="row row-cols-3 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="B9" id="B9" value="Ruturaj Gaikwad" style="height: 50px; width: 50px;" class="bat">
-            </div>
-            <div class="col-3">
-                <p style="font-size: 25px;">Ruturaj Gaikwad</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container options" style="background: linear-gradient(yellow,gold, blue);color: blue;text-shadow: 1px 1px gold">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="B10" id="B10" value="Robin Uthappa" style="height: 50px; width: 50px;" class="bat">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Robin Uthappa</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container options" style="background: linear-gradient(yellow,gold, blue);color: blue;text-shadow: 1px 1px gold">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="B11" id="B11" value="Devon Conway" style="height: 50px; width: 50px;" class="bat">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Devon Conway</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container options" style="background: linear-gradient(yellow,gold, blue);color: blue;text-shadow: 1px 1px gold">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="B12" id="B12" value="Subhranshu Senapati" style="height: 50px; width: 50px;" class="bat">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Subhranshu Senapati</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container options" style="background: linear-gradient(yellow,gold, blue);color: blue;text-shadow: 1px 1px gold">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="B13" id="B13" value="Hari Nishaanth" style="height: 50px; width: 50px;" class="bat">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Hari Nishaanth</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- -------------------------------------------------------------------------------------------------------------------- -->
-
-
-
-
-
-
-
-
-<!-- -----------------------------------------team 2--------------------------------------------------------------------------- -->
-<!-- --------------------------------------------------------------KKR Bat------------------------------------------------------ -->
-<div>
-    <div class="container options" style="background: linear-gradient(rgb(71, 15, 134), rgb(71, 15, 134),rgb(71, 15, 134),gold); color: gold;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="B36" id="B36" value="Shreyas Iyer" style="height: 50px; width: 50px;" class="bat">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Shreyas Iyer</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background: linear-gradient(rgb(71, 15, 134), rgb(71, 15, 134),rgb(71, 15, 134),gold); color: gold;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="B37" id="B37" value="Nitish Rana" style="height: 50px; width: 50px;" class="bat">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Nitish Rana</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background: linear-gradient(rgb(71, 15, 134), rgb(71, 15, 134),rgb(71, 15, 134),gold); color: gold;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="B38" id="B38" value="Ajinkya Rahane" style="height: 50px; width: 50px;" class="bat">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Ajinkya Rahane</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background: linear-gradient(rgb(71, 15, 134), rgb(71, 15, 134),rgb(71, 15, 134),gold); color: gold;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="B39" id="B39" value="Rinku Singh" style="height: 50px; width: 50px;" class="bat">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Rinku Singh</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background: linear-gradient(rgb(71, 15, 134), rgb(71, 15, 134),rgb(71, 15, 134),gold); color: gold;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="B40" id="B40" value="Abhijeet Tomar" style="height: 50px; width: 50px;" class="bat">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Abhijeet Tomar</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background: linear-gradient(rgb(71, 15, 134), rgb(71, 15, 134),rgb(71, 15, 134),gold); color: gold;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="B41" id="B41" value="Pratham Singh" style="height: 50px; width: 50px;" class="bat">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Pratham Singh</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background: linear-gradient(rgb(71, 15, 134), rgb(71, 15, 134),rgb(71, 15, 134),gold); color: gold;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="B42" id="B42" value="Alex Hales" style="height: 50px; width: 50px;" class="bat">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Alex Hales</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background: linear-gradient(rgb(71, 15, 134), rgb(71, 15, 134),rgb(71, 15, 134),gold); color: gold;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="B43" id="B43" value="Ramesh Kumar" style="height: 50px; width: 50px;" class="bat">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Ramesh Kumar</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background: linear-gradient(rgb(71, 15, 134), rgb(71, 15, 134),rgb(71, 15, 134),gold); color: gold;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="B44" id="B44" value="Aman Khan" style="height: 50px; width: 50px;" class="bat">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Aman Khan</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background: linear-gradient(rgb(71, 15, 134), rgb(71, 15, 134),rgb(71, 15, 134),gold); color: gold;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="B45" id="B45" value="Baba Indrajith" style="height: 50px; width: 50px;" class="bat">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Baba Indrajith</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- -------------------------------------------------------------------------------------------------------------------- -->
-
-
-
-                </div>
-            </div>
-        </div>
-<!-- bat-end -->
-
-
-
-
-
-
-
-
-
-<!-- -----------------------------------------------------BOWLERS----------------------------------------------------------- -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Bowlers <span class="badge bg-danger" style="margin-left: 2px;" id="selected_bowl">0</span>
-                </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-
-<!-- ----------------------------------------------------team1---------------------------------------------------------------- -->
-<!-- ------------------------------------------------------------CSK BOWLERS----------------------------------------------------------------- -->
-<div>
-    <div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-    <div class="row row-cols-2 mt-2">
-        <div class="col-3">
-            <input type="checkbox" name="BL20" id="BL20" value="Deepak Chahar" style="height: 50px; width: 50px;" class="bowl">
-        </div>
-        <div class="col">
-            <p style="font-size: 25px;">Deepak Chahar</p>
-        </div>
-    </div>
-</div>
-<div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-    <div class="row row-cols-2 mt-2">
-        <div class="col-3">
-            <input type="checkbox" name="BL21" id="BL21" value="KM Asif" style="height: 50px; width: 50px;" class="bowl">
-        </div>
-        <div class="col">
-            <p style="font-size: 25px;">KM Asif</p>
-        </div>
-    </div>
-</div>
-<div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-    <div class="row row-cols-2 mt-2">
-        <div class="col-3">
-            <input type="checkbox" name="BL22" id="BL22" value="Tushar Deshpande" style="height: 50px; width: 50px;" class="bowl">
-        </div>
-        <div class="col">
-            <p style="font-size: 25px;">Tushar Deshpande</p>
-        </div>
-    </div>
-</div>
-<div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-    <div class="row row-cols-2 mt-2">
-        <div class="col-3">
-            <input type="checkbox" name="BL23" id="BL23" value="Maheesh Theekshana" style="height: 50px; width: 50px;" class="bowl">
-        </div>
-        <div class="col">
-            <p style="font-size: 25px;">Maheesh Theekshana</p>
-        </div>
-    </div>
-</div>
-<div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-    <div class="row row-cols-2 mt-2">
-        <div class="col-3">
-            <input type="checkbox" name="BL24" id="BL24" value="Simranjeet Singh" style="height: 50px; width: 50px;" class="bowl">
-        </div>
-        <div class="col">
-            <p style="font-size: 25px;">Simranjeet Singh</p>
-        </div>
-    </div>
-</div>
-<div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-    <div class="row row-cols-2 mt-2">
-        <div class="col-3">
-            <input type="checkbox" name="BL25" id="BL25" value="Adam Milne" style="height: 50px; width: 50px;" class="bowl">
-        </div>
-        <div class="col">
-            <p style="font-size: 25px;">Adam Milne</p>
-        </div>
-    </div>
-</div>
-<div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-    <div class="row row-cols-2 mt-2">
-        <div class="col-3">
-            <input type="checkbox" name="BL27" id="BL27" value="Mukesh Choudhary" style="height: 50px; width: 50px;" class="bowl">
-        </div>
-        <div class="col">
-            <p style="font-size: 25px;">Mukesh Choudhary</p>
-        </div>
-    </div>
-</div>
-<div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-    <div class="row row-cols-2 mt-2">
-        <div class="col-3">
-            <input type="checkbox" name="BL28" id="BL28" value="Prashant Solanki" style="height: 50px; width: 50px;" class="bowl">
-        </div>
-        <div class="col">
-            <p style="font-size: 25px;">Prashant Solanki</p>
-        </div>
-    </div>
-</div>
-<div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-    <div class="row row-cols-2 mt-2">
-        <div class="col-3">
-            <input type="checkbox" name="BL29" id="BL29" value="Mitchell Santner" style="height: 50px; width: 50px;" class="bowl">
-        </div>
-        <div class="col">
-            <p style="font-size: 25px;">Mitchell Santner</p>
-        </div>
-    </div>
-</div>
-<div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-    <div class="row row-cols-2 mt-2">
-        <div class="col-3">
-            <input type="checkbox" name="BL30" id="BL30" value="Rajvardhan Hangargekar" style="height: 50px; width: 50px;" class="bowl">
-        </div>
-        <div class="col">
-            <p style="font-size: 25px;">Rajvardhan Hangargekar</p>
-        </div>
-    </div>
-</div>
-</div>
-<!-- -------------------------------------------------------------------------------------------------------------------- -->
-
-
-<!-- ----------------------------------------------------team2---------------------------------------------------------------- -->
-<!-- --------------------------------------------------------KKR Bowl------------------------------------------------------------ -->
-<div>
-    <div class="container options" style="background-color: red; color:black;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="BL68" id="BL68" value="Varun Chakravarty" style="height: 50px; width: 50px;" class="bowl">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Varun Chakravarty</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: red; color:black;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="BL69" id="BL69" value="Pat Cummins" style="height: 50px; width: 50px;" class="bowl">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Pat Cummins</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: red; color:black;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="BL70" id="BL70" value="Rasikh Dar" style="height: 50px; width: 50px;" class="bowl">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Rasikh Dar</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: red; color:black;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="BL71" id="BL71" value="Tim Southee" style="height: 50px; width: 50px;" class="bowl">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Tim Southee</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: red; color:black;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="BL72" id="BL72" value="Umesh Yadav" style="height: 50px; width: 50px;" class="bowl">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Umesh Yadav</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: red; color:black;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="BL73" id="BL73" value="Chamika Karunaratne" style="height: 50px; width: 50px;" class="bowl">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Chamika Karunaratne</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: red; color:black;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="BL74" id="BL74" value="Shivam Mavi" style="height: 50px; width: 50px;" class="bowl">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Shivam Mavi</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- -------------------------------------------------------------------------------------------------------------------- -->
-
-
-                </div>
-            </div>
-        </div>
-<!-- bowl-end -->
-
-
-
-
-
-
-
-
-
-<!-- ----------------------------------------------------Wicket Keepers-------------------------------------------------------------- -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Wicket Keepers <span class="badge bg-danger" style="margin-left: 2px;" id="selected_wk">0</span>
-                </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-
-
-<!-- ----------------------------------------------------team1---------------------------------------------------------------- -->
-<!-- --------------------------------------------------------------CSK WK--------------------------------------------------------------- -->
-<div>
-    <div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="WK6" id="WK6" value="MS Dhoni" style="height: 50px; width: 50px;" class="wk">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">MS Dhoni</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="WK7" id="WK7" value="Ambati Rayudu" style="height: 50px; width: 50px;" class="wk">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Ambati Rayudu</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="WK8" id="WK8" value="N Jagadeesan" style="height: 50px; width: 50px;" class="wk">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">N Jagadeesan</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- --------------------------------------------------------------------------------------------------------------------------- -->
-<!-- ----------------------------------------------------team2---------------------------------------------------------------- -->
-<!-- ---------------------------------------------------------KKR Wk----------------------------------------------------------- -->
-<div>
-    <div class="container options" style="background-color: red; color:black;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="WK21" id="WK21" value="Sheldon Jackson" style="height: 50px; width: 50px;" class="wk">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Sheldon Jackson</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: red; color:black;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="WK22" id="WK22" value="Sam Billings" style="height: 50px; width: 50px;" class="wk">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Sam Billings</p>
-            </div>
-        </div>
-    </div>
-
-</div>
-<!-- -------------------------------------------------------------------------------------------------------------------- -->
-                </div>
-            </div>
-        </div>
-<!-- wk-end -->
-
-
-
-
-
-
-
-
-
-<!-- ----------------------------------------------------------ALL Rounders-------------------------------------------------------------- -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
-                    All Rounders <span class="badge bg-danger" style="margin-left: 2px;" id="selected_all">0</span>
-                </button>
-            </h2>
-            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-
-
-
-<!-- ----------------------------------------------------team1---------------------------------------------------------------- -->
-<!-- --------------------------------------------------------------CSK ALLY---------------------------------------------------------------- -->
-<div>
-    <div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="AL13" id="AL13" value="Ravindra Jadeja" style="height: 50px; width: 50px;" class="all">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Ravindra Jadeja</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="AL14" id="AL14" value="Moeen Ali" style="height: 50px; width: 50px;" class="all">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Moeen Ali</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="AL15" id="AL15" value="Dwayne Bravo" style="height: 50px; width: 50px;" class="all">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Dwayne Bravo</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="AL16" id="AL16" value="Shivam Dube" style="height: 50px; width: 50px;" class="all">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Shivam Dube</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="AL17" id="AL17" value="Dwaine Pretorius" style="height: 50px; width: 50px;" class="all">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Dwaine Pretorius</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="AL18" id="AL18" value="Bhagath Varma" style="height: 50px; width: 50px;" class="all">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Bhagath Varma</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: yellow; color: rgb(0, 0, 0);">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="AL19" id="AL19" value="Chris Jordan" style="height: 50px; width: 50px;" class="all">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Chris Jordan</p>
-            </div>
-        </div>
-    </div>
-</div>                    
-<!-- -------------------------------------------------------------------------------------------------------------------- -->
-<!-- ----------------------------------------------------team2---------------------------------------------------------------- -->
-<!-- ----------------------------------------------------------KKr ALly---------------------------------------------------------- -->
-<div>
-    <div class="container options" style="background-color: red; color:black;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="AL43" id="AL43" value="Andre Russell" style="height: 50px; width: 50px;" class="all">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Andre Russell</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: red; color:black;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="AL44" id="AL44" value="Venkatesh Iyer" style="height: 50px; width: 50px;" class="all">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Venkatesh Iyer</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: red; color:black;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="AL45" id="AL45" value="Sunil Narine" style="height: 50px; width: 50px;" class="all">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Sunil Narine</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: red; color:black;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="AL46" id="AL46" value="Anukul Roy" style="height: 50px; width: 50px;" class="all">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Anukul Roy</p>
-            </div>
-        </div>
-    </div>
-    <div class="container options" style="background-color: red; color:black;">
-        <div class="row row-cols-2 mt-2">
-            <div class="col-3">
-                <input type="checkbox" name="AL47" id="AL47" value="Mohammad Nabi" style="height: 50px; width: 50px;" class="all">
-            </div>
-            <div class="col">
-                <p style="font-size: 25px;">Mohammad Nabi</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- -------------------------------------------------------------------------------------------------------------------- -->
-
-
-
-
-                </div>
-            </div>
-        </div>
-        <!-- all rounders end -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingfive">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive" onclick="click()">
-                    Captain <span class="badge bg-danger" style="margin-left: 2px;" id="selected_all">👍</span>
-                </button>
-            </h2>
-            <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-
-                </div>
-            </div>
-
-        </div>
-<!-- team selection end -->
-    </div>
-<hr><hr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="fixed-bottom">
-    <div class="d-grid gap-2">
-        <button class="btn btn-block" id="go" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="margin: 10px; background-color:dodgerblue;">
-            GO Ahead
-        </button>
-    </div>
-</div>
-
-
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasBottomLabel">
-            OverView
-        </h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body small">
-
-
-
-
-
-
-
-        <div class="d-grid gap-2">
-            <button type="submit" name="submit" class="btnSubmit btn-block" value="Go Ahead"style="margin: 10px; background-color:aqua;"/>
-                done
-            </button>
-        </div>
-
-    </div>
-</div>
-
-
-
-
-
-
-</form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-    var checkBT = document.querySelectorAll('.bat');
-    var countBT = 0;
-    for (var bat of checkBT){
-        bat.checked = this.checked;
-    }
-    for(var i = 0; i < checkBT.length; i++){
-        checkBT[i].addEventListener('click', function() {
-        
-            if (this.checked == true){
-                countBT++;
-                if (countBT<3){
-                    var element = document.getElementById("selected_bat");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-danger");
-                }
-
-                else if (countBT>6){
-                    var element = document.getElementById("selected_bat");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-danger");
-                }
-                else{
-                    var element = document.getElementById("selected_bat");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-success");
-                }
-
-            } else{
-                countBT--;
-                if (countBT<3){
-                    var element = document.getElementById("selected_bat");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-danger");
-                }
-
-                else if (countBT>6){
-                    var element = document.getElementById("selected_bat");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-danger");
-                }
-                else{
-                    var element = document.getElementById("selected_bat");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-success");
-                }
-            }
-            document.getElementById('selected_bat').innerHTML = countBT;
-
-        })
-    }
-
-
-
-
-
-
-
-
-
-    var checkBL = document.querySelectorAll('.bowl');
-    var countBL = 0;
-    for (var bowl of checkBL){
-        bowl.checked = this.checked;
-    }
-    for(var i = 0; i < checkBL.length; i++){
-        checkBL[i].addEventListener('click', function() {
-            if (this.checked == true){
-                countBL++;
-                if (countBL<3){
-                    var element = document.getElementById("selected_bowl");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-danger");
-                }
-
-                else if (countBL>4){
-                    var element = document.getElementById("selected_bowl");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-danger");
-                }
-                else{
-                    var element = document.getElementById("selected_bowl");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-success");
-                }
-
-            } else{
-                countBL--;
-                if (countBL<3){
-                    var element = document.getElementById("selected_bowl");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-danger");
-                }
-
-                else if (countBL>6){
-                    var element = document.getElementById("selected_bowl");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-danger");
-                }
-                else{
-                    var element = document.getElementById("selected_bowl");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-success");
-                }
-            }
-            document.getElementById('selected_bowl').innerHTML = countBL;
-
-        })
-    }
-
-
-
-
-
-
-
-
-
-    var checkWK = document.querySelectorAll('.wk');
-    var countWK = 0;
-    for (var wk of checkWK){
-        wk.checked = this.checked;
-    }
-    for(var i = 0; i < checkWK.length; i++){
-        checkWK[i].addEventListener('click', function() {
-            if (this.checked == true){
-                countWK++;
-                if (countWK>4){
-                    var element = document.getElementById("selected_wk");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-danger");
-                }
-
-                else if (countWK==0){
-                    var element = document.getElementById("selected_wk");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-danger");
-                }
-                else{
-                    var element = document.getElementById("selected_wk");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-success");
-                }
-            } else{
-                countWK--;
-                if (countWK>4){
-                    var element = document.getElementById("selected_wk");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-danger");
-                }
-
-                else if (countWK==0){
-                    var element = document.getElementById("selected_wk");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-danger");
-                }
-                else{
-                    var element = document.getElementById("selected_wk");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-success");
-                }
-            }
-            document.getElementById('selected_wk').innerHTML = countWK;
-
-        })
-    }
-
-
-
-
-
-
-
-
-
-    var checkAL = document.querySelectorAll('.all');
-    var countAL = 0;
-    for (var bat of checkAL){
-        bat.checked = this.checked;
-    }
-    for(var i = 0; i < checkAL.length; i++){
-        checkAL[i].addEventListener('click', function() {
-            if (this.checked == true){
-                countAL++;
-                if (countAL>4){
-                    var element = document.getElementById("selected_all");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-danger");
-                }
-
-                else if (countAL==0){
-                    var element = document.getElementById("selected_all");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-danger");
-                }
-                else{
-                    var element = document.getElementById("selected_all");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-success");
-                }
-            } else{
-                countAL--;
-                if (countAL>4){
-                    var element = document.getElementById("selected_all");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-danger");
-                }
-
-                else if (countAL==0){
-                    var element = document.getElementById("selected_all");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-danger");
-                }
-                else{
-                    var element = document.getElementById("selected_all");
-                    element.classList.remove("badge", "bg-danger","bg-success");
-                    element.classList.add("badge", "bg-success");
-                }
-            }
-            document.getElementById('selected_all').innerHTML = countAL;
-
-        })
-    }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxeEvXaIUX5IjOl3kYmb07FoJpnxOpREGE22eMqrHWvukpjoM867SCxcekyItpTw94F/exec'
-    const form = document.forms['google-sheet']
-
-    form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => alert("Done!"))
-        .catch(error => console.error('Error!', error.message))
-    })
-</script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-</html>
+                    <!-- DC cap -->
+                                <!-- bat -->
+                                <div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="C" value="Prithvi Shaw" style="height: 50px; width: 50px;" class="cap" required>
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Prithvi Shaw</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="C" value="David Warner" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">David Warner</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="C" value="Ashwin Hebbar" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Ashwin Hebbar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="C" value="Sarfaraz Khan" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Sarfaraz Khan</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="C" value="Yash Dhull" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Yash Dhull</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="C" value="Mandeep Singh" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Mandeep Singh</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="C" value="Rovman Powell" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Rovman Powell</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        <!-- bowl -->
+                                <div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL59" value="Anrich Nortje" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Anrich Nortje</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL60" value="Shardul Thakur" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Shardul Thakur</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL61" value="Kamlesh Nagarkoti" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Kamlesh Nagarkoti</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL62" value="Mustafizur Rahman" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Mustafizur Rahman</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL63" value="Lungi Ngidi" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Lungi Ngidi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL64" value="Khaleel Ahmed" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Khaleel Ahmed</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL65" value="Chetan Sakariya" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Chetan Sakariya</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL66" value="Praveen Dubey" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Praveen Dubey</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL67" value="Kuldeep Yadav" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Kuldeep Yadav</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        <!-- wk -->
+                                <div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="WK18" value="Rishabh Pant" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Rishabh Pant</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="WK19" value="KS Bharat" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">KS Bharat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="WK20" value="Tim Seifert" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Tim Seifert</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        <!-- all -->
+                                <div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="AL38" value="Axar Patel" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Axar Patel</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="AL39" value="Mitchell Marsh" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Mitchell Marsh</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="AL40" value="Lalit Yadav" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Lalit Yadav</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="AL41" value="Ripal Patel" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Ripal Patel</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background: linear-gradient(#08a1fa, #08a1fa,#08a1fa,blue);">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="AL42" value="Vicky Ostwal" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Vicky Ostwal</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    <!-- mi cap -->
+                        <!-- bat -->
+                                <div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="B14" value="Rohit Sharma" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Rohit Sharma</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="B15" value="Suryakumar Yadav" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Suryakumar Yadav</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="B16" value="Tilak Varma" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Tilak Varma</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="B17" value="Ramandeep Singh" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Ramandeep Singh</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="B18" value="Rahul Buddhi" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Rahul Buddhi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="B19" value="Anmolpreet Singh" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Anmolpreet Singh</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="B20" value="Dewald Brevis" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Dewald Brevis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        <!-- bowl -->
+                                <div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL31" value="Jasprit Bumrah" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Jasprit Bumrah</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL32" value="Mohammad Arshad Khan" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Mohammad Arshad Khan</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL33" value="Jaydev Unadkat" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Jaydev Unadkat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL34" value="Mayank Markande" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Mayank Markande</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL35" value="Jofra Archer" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Jofra Archer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL36" value="Tymal Mills" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Tymal Mills</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL37" value="Riley Meredith" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Riley Meredith</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL38" value="Murugan Ashwin" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Murugan Ashwin</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="BL39" value="Basil Thampi" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Basil Thampi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        <!-- wk -->
+                                <div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="WK9" value="Ishan Kishan" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Ishan Kishan</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="WK10" value="Aryan Juyal" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Aryan Juyal</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        <!-- all -->
+                                <div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="AL20" value="Kieron Pollard" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Kieron Pollard</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="AL21" value="Hrithik Shokeen" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Hrithik Shokeen</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="AL22" value="Arjun Tendulkar" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Arjun Tendulkar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="AL23" value="Sanjay Yadav" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Sanjay Yadav</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="AL24" value="Daniel Sams" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Daniel Sams</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="AL25" value="Tim David" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Tim David</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container options" style="background-color: blue; color: gold;">
+                                        <div class="row row-cols-2 mt-2">
+                                            <div class="col-3">
+                                                <input type="radio" name="C" id="AL26" value="Fabian Allen" style="height: 50px; width: 50px;" class="cap">
+                                            </div>
+                                            <div class="col">
+                                                <p style="font-size: 25px;">Fabian Allen</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
